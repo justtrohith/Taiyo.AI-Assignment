@@ -1,6 +1,6 @@
 import { QueryClient, useQuery } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
-
+import LineChart from './LineChart';
 const queryClient = new QueryClient();
 
 async function fetchWorldData() {
@@ -42,10 +42,13 @@ const ChartsPage = () => {
     const graphData = graphDataQuery.data;
     console.log(worldData, countryData, graphData);
     return(
-        <div>
-            <h1>ChartsPage</h1>
+        <>
+            <div className="container mx-auto">
+              <h1 className="text-2xl font-bold my-4">COVID-19 Cases</h1>
+              <LineChart data={graphData} />
+            </div>
             <ReactQueryDevtools initialIsOpen={false} />
-        </div>
+        </>
     )
 }
 
