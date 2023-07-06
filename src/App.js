@@ -10,10 +10,10 @@ function App() {
         <nav className="w-64 bg-gray-200">
           <ul className="p-4 space-y-2">
             <li>
-              <Link to="/" className="block font-bold">ContactPage</Link>
+              <Link to="/" className="block font-bold"><button className='mt-4 mb-4 bg-gray-800 hover:bg-orange-600 text-white py-2 px-4 rounded-lg shadow-md'>ContactPage</button></Link>
             </li>
             <li>
-              <Link to="/charts" className="block font-bold">ChartsPage</Link>
+              <Link to="/charts" className="block font-bold"><button className='mt-4 mb-4 bg-gray-800 hover:bg-orange-600 text-white py-2 px-4 rounded-lg shadow-md'>ChartsPage</button></Link>
             </li>
           </ul>
         </nav>
