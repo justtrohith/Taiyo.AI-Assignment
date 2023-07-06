@@ -223,11 +223,11 @@ const ContactPage = () => {
  </div>
             <div>
             {contacts.length > 0 ? (
-        <ul className="space-y-4">
+        <ul className="space flex ">
         {contacts.map((contact) => (
           <li
             key={contact.id}
-            className="border border-gray-300 p-4 rounded-md hover:bg-orange-100 flex items-center justify-between"
+            className="flex-col shadow-md basis-1/3 m-0.5  border border-gray-300 p-4 rounded-md hover:bg-orange-100 flex items-center justify-between"
           >
             <div>
               <h3 className="text-xl font-semibold">{contact.firstName}</h3>
